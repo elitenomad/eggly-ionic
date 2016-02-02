@@ -1,0 +1,16 @@
+<ion-view>
+	<ion-content>
+		<a menu-close class="logo" ui-sref="eggly.categories">
+			<img src="assets/img/eggly-logo.png">
+		</a>
+		<ion-list>
+		    <ion-item menu-close href="" ng-repeat="category in categories" 
+		    	ui-sref="eggly.categories.bookmarks({category: category.name})" 
+		    	ui-sref-active="active">
+		        {{category.name}}
+		    </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
+
+
